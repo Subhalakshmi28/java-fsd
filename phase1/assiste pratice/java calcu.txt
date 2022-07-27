@@ -1,0 +1,48 @@
+package domine;
+import java.util.Scanner;
+
+
+
+public class Calculator {
+	
+	
+	
+	public static void main(String[] args) {
+		int a,b;
+		char op;
+		int c;
+		 Scanner sc= new Scanner(System.in);
+		  System.out.println("Enter the First number");
+	   a=sc.nextInt();
+	   System.out.println("Enter the second number");
+	   b=sc.nextInt();
+	   System.out.println("Enter the operations to be performed (+,-,*./)");
+	   op=sc.next().charAt(0);
+	
+	   switch(op)
+	   {
+	   case '+':
+		   c=a+b;
+		   System.out.println("Addition of two number is :"+c);
+		   break;
+	   case '-':
+		   c=a-b;
+		   System.out.println("subtraction of two number is :"+c);
+		   break;
+	   case '*':
+		   c=a*b;
+		   System.out.println("Multipliction of two number is :"+c);
+		   break;
+	   case '/':
+		   c=a/b;
+		   System.out.println("Division of two number is :"+c);
+		   break;
+	   default:
+		  
+		   System.out.println("Invalid Operation");
+		   break;
+		   
+	   }
+	     }	
+
+}
